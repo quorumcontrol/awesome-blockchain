@@ -35,6 +35,10 @@ https://status.im/
 
 https://medium.com/@matteozago/why-the-web-3-0-matters-and-you-should-know-about-it-a5851d63c949
 
+https://medium.com/innogy-innovation-hub/berlin-blockchain-guide-2ea1cda1367e
+
+https://medium.com/@diwtoken/ico-launch-update-ed9a1002820b
+
 ### Ecosystem (finance too)
 
 https://0xproject.com/wiki
