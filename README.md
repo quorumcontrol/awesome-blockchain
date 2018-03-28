@@ -8,6 +8,11 @@ tobowers blockchain list: https://twitter.com/tobowers/lists/blockchain
 ## Links
 
 ### Chains
+
+https://neo.org/ (china's "ethereum killer")
+
+https://ont.io/ (similar in thinking to us)
+
 https://eos.io/
 
 https://www.ethereum.org/
