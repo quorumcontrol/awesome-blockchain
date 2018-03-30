@@ -22,3 +22,21 @@ Imagine you have 2 keys. You have one that you can freely give to the world (the
 This is a theorem of computing which means that your system can continue to operate even if some percentage of the nodes participating are *actively* trying to subvert your system. It has been proven that no system may tolerate more than 1/3 of the participants being evil.
 
 This concept is the crux of *all* public (and private) chains. Everyone needs their system to "be byzntine fault tolerant."
+
+### Blockchain
+
+* https://steemit.com/blockchain/@sndbox/blockchain-and-cryptocurrency-an-illustrated-introduction
+
+A blockchain is a fairly simple idea. It really just means an ordered set of things. In general parlance it will mean a specific set of ordered things using a specific cryptographic technique. You already know that a hash is like a fingerprint for a piece of content. We can use that hash to create a "linked list" where the history cannot be altered.
+
+```
++----------------------+       +----------------------+       +---------------------+
+|                      |       |                      |       |                     |
+| A                    |       | B                    |       | C                   |
+| List of transactions +------^+ Hash(A)              +------^+ Hash(B)             |
+|                      |       | List of transactions |       | List of transactins |
+|                      |       |                      |       |                     |
++----------------------+       +----------------------+       +---------------------+
+```
+
+A is our "genesis block" (because it does not reference any other blocks). Block B references a hash of A. Because of this, B can't claim to be a descendent of any other block than A (because hashes are unique). C must *also* come from A because it references B which, in turn, references A. Any chain that tried to lie about A but give a proper C would be immediately spottable.
