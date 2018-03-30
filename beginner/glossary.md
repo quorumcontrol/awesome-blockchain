@@ -40,3 +40,28 @@ A blockchain is a fairly simple idea. It really just means an ordered set of thi
 ```
 
 A is our "genesis block" (because it does not reference any other blocks). Block B references a hash of A. Because of this, B can't claim to be a descendent of any other block than A (because hashes are unique). C must *also* come from A because it references B which, in turn, references A. Any chain that tried to lie about A but give a proper C would be immediately spottable.
+
+### Forking
+
+You cannot fake a full blockchain history, however a malicious person can introduce a *fork:
+
+```
+                                                              +-------------------+    +----------------------+
+                                                              |                   |    |                      |
++----------------------+       +----------------------+       | C                 |    | D                    |
+|                      |       |                      |   +--^+ Hash(B)           +----> Hash(C)              |
+| A                    |       | B                    |   |   | Real Transactions |    | List of transactions |
+| List of transactions +------^+ Hash(A)              +---+   |                   |    |                      |
+|                      |       | List of transactions |   |   +-------------------+    +----------------------+
+|                      |       |                      |   |
++----------------------+       +----------------------+   |   +-------------------+    +----------------------+
+                                                          |   |                   |    |                      |
+                                                          |   | C                 |    | D                    |
+                                                          +--^+ Hash(B)           +----> Hash(C, bad)         |
+                                                              | Fake transactions |    | List of transactions |
+                                                              |                   |    |                      |
+                                                              +-------------------+    +----------------------+
+
+```
+
+The malicious presenter of the chain can present two *different* C depending on the context. Everything looks like it's in order because both Cs have a valid hash of B. In order to build on the fork, they must continue to reference the bad C.
