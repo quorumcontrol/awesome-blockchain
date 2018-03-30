@@ -43,7 +43,7 @@ A is our "genesis block" (because it does not reference any other blocks). Block
 
 ### Forking
 
-You cannot fake a full blockchain history, however a malicious person can introduce a *fork:
+You cannot fake a full blockchain history, however a malicious person can introduce a *fork*:
 
 ```
                                                               +-------------------+    +----------------------+
