@@ -9,6 +9,8 @@ tobowers blockchain list: https://twitter.com/tobowers/lists/blockchain
 
 ### Chains
 
+https://www.algorand.com/ (USV recent investment, similar promises to QC)
+
 https://neo.org/ (china's "ethereum killer")
 
 https://ont.io/ (similar in thinking to us)
