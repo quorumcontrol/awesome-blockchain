@@ -7,6 +7,8 @@ tobowers blockchain list: https://twitter.com/tobowers/lists/blockchain
 
 ## Links
 
+newest zk-snarks (efficient) - https://eprint.iacr.org/2018/046.pdf
+
 ### Chains
 
 https://www.algorand.com/ (USV recent investment, similar promises to QC)
